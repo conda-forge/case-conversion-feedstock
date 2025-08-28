@@ -18,10 +18,9 @@ requirements:
   host:
     - python {{ python_min }}
     - pip
-    - setuptools
+    - hatchling >=1.27.0
   run:
     - python >={{ python_min }}
-    - regex >=2016.2.25
 
 test:
   imports:
