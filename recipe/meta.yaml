@@ -1,5 +1,5 @@
 {% set name = "case-conversion" %}
-{% set version = "2.1.0" %}
+{% set version = "3.0.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,12 +7,12 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/case_conversion-{{ version }}.tar.gz
-  sha256: 4114aaed4213f2235f1648502fd1793e5fdfa3fa86f85979fd2d0dce1584e197
+  sha256: 2e5098c5e20d67282a5999531e7797c412daafcf646169e42066e30cba37a097
 
 build:
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 1
+  number: 0
 
 requirements:
   host:
